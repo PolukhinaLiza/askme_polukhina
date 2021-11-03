@@ -1,0 +1,49 @@
+main > .container {
+    padding: 60px 15px 0;
+  }
+
+.question{
+  margin: 30px;
+  padding:10px;
+  border: 2px solid gray;
+  border-radius:5px;
+}
+.number{
+  width: 150px;
+  height: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+.avatar{
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 15%;
+  float:left;
+}
+
+.ask_submit{
+  margin: 20px;
+}
+.ask{
+  margin: 20px;
+  width: 250%;
+}
+.navbar-brand{
+  margin-right: 20px;
+}
+.link-primary,.link-dark,.link-danger, .link-success{
+  margin: 5px;
+}
+
+.hr_hr{
+  border-radius:5px;
+  padding: 2px;
+  border: 2px solid black;
+  color: black;
+}
+
+.upload{
+  margin: 20px;
+}
