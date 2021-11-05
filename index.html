@@ -21,12 +21,12 @@
 <header>
   
   <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark static-top bg-dark">
     <div class="container-fluid">
       <div class="col-1">
       <a class="navbar-brand" href="#">Ask Polukhina</a>
     </div>
-    <div class="col-6">
+    <div class="col-5">
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -34,9 +34,16 @@
         </form>
       </div>
     </div>
-    <div class="col-9">
-      <a href="#" class="link-primary">log in</a>
-      <a href="#" class="link-primary">register</a>
+    <div class="container">
+    <div class="col-2">
+      <img class="avatar-nav" src="static/img/avatar.jpeg" alt="avatar">
+    </div>
+    <div class="col-4">
+      <a class="navbar-brand" href="#">Dr.Pepper</a>
+      <p></p>
+      <a href="#" class="link-primary" style="margin: 10px;">log in</a>
+     <a href="#" class="link-primary" style="margin: 10px;">register</a>
+    </div>
     </div>
     </div>
   </nav>
@@ -51,8 +58,15 @@
           <div class="row question">
            <div class="col-3">
              <img class="avatar" src="static/img/avatar.jpeg" alt="avatar">
-            <p><input class="number" type="number" value="2"></p>
-            </div>
+             <p></p>
+               
+              <button type="button" class="btn btn-success">Like</button>
+           
+              <button type="button" class="btn btn-danger">Dislike</button>
+           
+             <output class="result-like" name="result">5</output>
+            
+          </div>
              <div class="col-9">
               <h3>Question 1</h3>
               Текст (от лат. textus — ткань; сплетение, сочетание) — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.
@@ -65,7 +79,13 @@
           <div class="row question">
             <div class="col-3">
               <img class="avatar" src="static/img/avatar.jpeg" alt="avatar">
-              <p><input class="number" type="number" value="2"></p>
+              <p></p>
+               
+              <button type="button" class="btn btn-success">Like</button>
+           
+              <button type="button" class="btn btn-danger">Dislike</button>
+           
+             <output class="result-like" name="result">5</output>
             </div>
               <div class="col-9">
                <h3>Question 2</h3>
@@ -79,7 +99,13 @@
            <div class="row question">
             <div class="col-3">
               <img class="avatar" src="static/img/avatar.jpeg" alt="avatar">
-              <p><input class="number" type="number" value="2"></p>
+              <p></p>
+               
+              <button type="button" class="btn btn-success">Like</button>
+           
+              <button type="button" class="btn btn-danger">Dislike</button>
+           
+             <output class="result-like" name="result">5</output>
             </div>
               <div class="col-9">
                <h3>Question 3</h3>
@@ -96,26 +122,26 @@
         <h2>Popular tags</h2>
         <div class="row">
         <div class="col-12">
-          <a href="#" class="link-dark">Ruby</a>
-          <a href="#" class="link-danger">Python</a>
-          <a href="#" class="link-dark">Technopark</a>
+          <a href="#" class="link-dark link">Ruby</a>
+          <a href="#" class="link-danger link">Python</a>
+          <a href="#" class="link-dark link">Technopark</a>
         </div></div>
         <div class="row">
         <div class="col-12">
-          <a href="#" class="link-dark">Perl</a>
-          <a href="#" class="link-primary">MySql</a>
+          <a href="#" class="link-dark link">Perl</a>
+          <a href="#" class="link-primary link">MySql</a>
         </div>
       </div>
       <div class="row">
         <div class="col-9">
-          <a href="#" class="link-success">django</a>
+          <a href="#" class="link-success link">django</a>
         </div></div>
         <h2>Best Members</h2>
-        <p><a href="#" class="link-primary">V.Pupkin</a></p>
-        <p><a href="#" class="link-primary">Dr.House</a></p>
-        <p><a href="#" class="link-primary">Bender</a></p>
-        <p><a href="#" class="link-primary">Queen Elizabeth</a></p>
-        <p><a href="#" class="link-primary">Mrs Smith</a></p>
+        <p><a href="#" class="link-primary link">V.Pupkin</a></p>
+        <p><a href="#" class="link-primary link">Dr.House</a></p>
+        <p><a href="#" class="link-primary link">Bender</a></p>
+        <p><a href="#" class="link-primary link">Queen Elizabeth</a></p>
+        <p><a href="#" class="link-primary link">Mrs Smith</a></p>
       </div>
     </div>
   </div>
@@ -125,23 +151,7 @@
 <footer class="footer mt-auto py-3 bg-light">
   
   <div class="container">
-    <nav aria-label="Page navigation example">
-      <ul class="pagination ask_submit">
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&laquo;</span>
-          </a>
-        </li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item"><a class="page-link" href="#">2</a></li>
-        <li class="page-item"><a class="page-link" href="#">3</a></li>
-        <li class="page-item">
-          <a class="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&raquo;</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    
   </div>
 </footer>
 

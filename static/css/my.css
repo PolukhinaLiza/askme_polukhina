@@ -33,8 +33,9 @@ main > .container {
 .navbar-brand{
   margin-right: 20px;
 }
-.link-primary,.link-dark,.link-danger, .link-success{
+.link{
   margin: 5px;
+  font-size: 30px;
 }
 
 .hr_hr{
@@ -46,4 +47,33 @@ main > .container {
 
 .upload{
   margin: 20px;
+}
+
+.text_reg{
+  margin: 20px;
+  color: red;
+}
+
+.result-like{
+  margin: 5px;
+  padding:7px;
+  border: 2px solid black;
+  border-radius:5px;
+}
+
+.result-currect{
+  width: 150px;
+  margin: 5px;
+  padding:7px;
+  border: 2px solid black;
+  border-radius:5px;
+}
+
+.avatar-nav{
+  width: 75px;
+  height: 75px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 15%;
+  float:left;
 }

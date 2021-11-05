@@ -21,7 +21,7 @@
 <header>
   
   <!-- Fixed navbar -->
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark static-top bg-dark">
     <div class="container-fluid">
       <div class="col-1">
       <a class="navbar-brand" href="#">Ask Polukhina</a>
@@ -34,9 +34,9 @@
         </form>
       </div>
     </div>
-    <div class="col-9">
-      <a href="#" class="link-primary">log in</a>
-      <a href="#" class="link-primary">register</a>
+    <div class="col-5">
+      <a href="#" class="link-primary" style="margin: 20px;">log in</a>
+      <a href="#" class="link-primary" style="margin: 20px;">register</a>
     </div>
     </div>
   </nav>
@@ -49,6 +49,9 @@
             <div class="col-9">
               <h2>Registration</h2>
                 <form>
+                  <div class="row g-3 align-items-center text_reg">
+                    Sorry, this email address allready registred!
+                  </div>
                     <div class="row g-3 align-items-center">
                         <div class="col-2">
                           <label for="inputLogin" class="col-form-label">Login</label>
@@ -115,26 +118,26 @@
               <h2>Popular tags</h2>
               <div class="row">
               <div class="col-12">
-                <a href="#" class="link-dark">Ruby</a>
-                <a href="#" class="link-danger">Python</a>
-                <a href="#" class="link-dark">Technopark</a>
+                <a href="#" class="link-dark link">Ruby</a>
+                <a href="#" class="link-danger link">Python</a>
+                <a href="#" class="link-dark link">Technopark</a>
               </div></div>
               <div class="row">
               <div class="col-12">
-                <a href="#" class="link-dark">Perl</a>
-                <a href="#" class="link-primary">MySql</a>
+                <a href="#" class="link-dark link">Perl</a>
+                <a href="#" class="link-primary link">MySql</a>
               </div>
             </div>
             <div class="row">
               <div class="col-9">
-                <a href="#" class="link-success">django</a>
+                <a href="#" class="link-success link">django</a>
               </div></div>
               <h2>Best Members</h2>
-              <p><a href="#" class="link-primary">V.Pupkin</a></p>
-              <p><a href="#" class="link-primary">Dr.House</a></p>
-              <p><a href="#" class="link-primary">Bender</a></p>
-              <p><a href="#" class="link-primary">Queen Elizabeth</a></p>
-              <p><a href="#" class="link-primary">Mrs Smith</a></p>
+              <p><a href="#" class="link-primary link">V.Pupkin</a></p>
+              <p><a href="#" class="link-primary link">Dr.House</a></p>
+              <p><a href="#" class="link-primary link">Bender</a></p>
+              <p><a href="#" class="link-primary link">Queen Elizabeth</a></p>
+              <p><a href="#" class="link-primary link">Mrs Smith</a></p>
             </div>
           </div>
         </div>
@@ -145,22 +148,6 @@
 <footer class="footer mt-auto py-3 bg-light">
   
   <div class="container">
-    <nav aria-label="Page navigation example">
-        <ul class="pagination ask_submit">
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+    
   </div>
 </footer>
