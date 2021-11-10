@@ -1,0 +1,31 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+{% block content %}
+              <h2>Log In</h2>
+                <form>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-2">
+                          <label for="inputLogin" class="col-form-label">Login</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputLogin" class="form-control ask" placeholder="Enter your login here..">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-2">
+                          <label for="inputPassword" class="col-form-label">Password</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="password" id="inputPassword" class="form-control ask" placeholder="********">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                    <div class="col-2"> </div>
+                    <div class="col-auto">
+                    <a class="btn btn-primary ask_submit" href="{% url 'index' %}" role="button">Log In!</a>
+                    <a href="{% url 'signup' %}" class="link-primary">create new account!</a>
+                </div>
+            </div>
+                </form>
+{% endblock content %}

@@ -1,0 +1,10 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+{% block content %}
+        <h2>Tag:python</h2>
+           {%for question in questions %}
+             {% include "incl/single_question.html" %}
+         {% endfor %}
+          {% include "incl/pagination.html" %}
+           
+   {% endblock content %}

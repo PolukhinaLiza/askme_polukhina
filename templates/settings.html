@@ -1,0 +1,49 @@
+{% extends 'incl/base.html' %}
+{% load static %}
+
+{% block content %}
+
+              <h2>Settings: Dr.Pepper</h2>
+                <form>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-2">
+                          <label for="inputLogin" class="col-form-label">Login</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputLogin" class="form-control ask">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-2">
+                          <label for="inputEmail" class="col-form-label">Email</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="email" id="inputEmail" class="form-control ask">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-2">
+                          <label for="inputNickName" class="col-form-label">NickName</label>
+                        </div>
+                        <div class="col-auto">
+                          <input type="text" id="inputNickName" class="form-control ask">
+                        </div>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="col-2">
+                          <label for="upload-container" class="col-form-label">Upload avatar</label>
+                        </div>
+                        <div class="col-auto">
+                    <form id="upload-container" method="POST" action="send.php">
+                        <img class="avatar-nav" src="{% static "img/avatar.jpeg" %}" alt="avatar">
+                        <div>
+                            <label class="upload" for="file-input">choose avatar</label>
+                             <input class="upload" id="file-input" type="file" name="file" multiple>
+                        </div>
+                   </form>
+                </div>
+                    </div>
+                     <a class="btn btn-primary ask_submit" href="{% url 'index' %}" role="button">Save</a>
+                  </form>
+                
+{% endblock content %}

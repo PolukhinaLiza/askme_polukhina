@@ -1,0 +1,21 @@
+ {% load static %}
+ <div class="row question">
+           <div class="col-3">
+             <img class="avatar" src="{% static "img/avatar.jpeg" %}" alt="avatar">
+             <p></p>
+               
+              <button type="button" class="btn btn-success">Like</button>
+           
+              <button type="button" class="btn btn-danger">Dislike</button>
+           
+             <output class="result-like" name="result">5</output>
+            
+          </div>
+             <div class="col-9">
+              <h3><a href="{% url 'question' %}" class="link-primary" style="margin: 10px;">{{ question.title }}</a></h3>
+             {{ question.text }}
+              <p></p>
+              <a href="{% url 'question' %}" class="link-primary">Answer(3)</a>
+              Tags:<a href="{% url 'tag' %}" class="link-primary">Python</a>
+             </div>
+          </div>

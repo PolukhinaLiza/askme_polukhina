@@ -1,0 +1,20 @@
+{% load static %}
+<div class="row question">
+            <div class="col-3">
+              <img class="avatar" src="{% static "img/avatar.jpeg" %}" alt="avatar">
+             <output class="result-currect" name="result">5</output>
+            </div>
+              <div class="col-9">
+               <h3>{{ answer.title }}</h3>
+             {{ answer.text }}
+               <p></p>
+              <a href="#" class="link-primary">Answer(3)</a>
+              Tags:<a href="#" class="link-primary">Python</a>
+              <p><div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                 Correct!
+                </label>
+            </div></p>
+              </div>
+           </div>
